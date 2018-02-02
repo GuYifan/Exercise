@@ -32,3 +32,5 @@
 .idea/notesolution.iml
 .idea/vcs.xml
 .idea/workspace.xml
+*.iml
+.idea/*
