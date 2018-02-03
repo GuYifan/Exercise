@@ -6,7 +6,7 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   # this is to test in dev environment because i'm not sure how to do FactoryBot outside RSpec
   # thus everything in qatest_dev DB is used here
 
-  @@base_url = 'http://localhost:3000/'
+  @@base_url = 'http://localhost:3000'
   @@user_sign_in = '/users/sign_in'
   @@user_sign_up = '/users/sign_up'
   @@user_email = 'test@test'
