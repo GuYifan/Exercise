@@ -7,7 +7,7 @@ class Order < ApplicationRecord
 
   def self.place_an_order cart, user_id
     success = false
-
+    # binding.pry
     if user_id.present? && cart.present?
       item_ids  = ShopItem.where(id: cart).pluck(:id).join(',')
       ord       = Order.create user_id: user_id, code: item_ids
@@ -27,6 +27,7 @@ class Order < ApplicationRecord
       # EX: [ ["Coconut", "Guava"], 3, 14 ]
       # If there is no orders for that user - we should output blank array
       # If user is not exists output should be blank array
+      # binding.pry
       user  = User.where(id: user_id).first
       ids   = Order.where(user_id: user.id).pluck(:code)
 

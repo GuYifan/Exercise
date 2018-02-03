@@ -1,9 +1,50 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  img: MyString
+orange:
+ id: 1
+ name: orange
+ img: orange.jpeg
+ item_type: juice
 
-two:
-  name: MyString
-  img: MyString
+apple:
+ id: 2
+ name: apple
+ img: apple.jpeg
+ item_type: juice
+
+coconut:
+ id: 3
+ name: coconut
+ img: coconut.jpeg
+ item_type: icecream
+
+guava:
+ id: 4
+ name: guava
+ img: guava.jpeg
+ item_type: icecream
+
+coffee:
+ id: 5
+ name: coffee
+ img: coconut.jpeg
+ item_type: icecream
+
+chocolate:
+ id: 6
+ name: chocolate
+ img: chocolate.jpeg
+ item_type: icecream
+
+cherry:
+ id: 7
+ name: cherry
+ img: cherry.jpeg
+ item_type: juice
+
+grape:
+ id: 8
+ name: grape
+ img: grape.jpeg
+ item_type: juice
+

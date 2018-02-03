@@ -7,3 +7,12 @@ development:
   username: postgres
   password:
   host: 127.0.0.1
+test:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: true
+  database: qatest_test
+  pool_adapter: postgresql
+  username: postgres
+  password:
+  host: 127.0.0.1
