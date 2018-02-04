@@ -17,6 +17,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  ENV["RAILS_ENV"] ||= 'test'
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
@@ -116,7 +117,7 @@ Capybara.configure do |config|
   config.default_driver        = :selenium
 end
 
-ENV['RAILS_ENV'] = 'test'
+# ENV['RAILS_ENV'] = 'test'
 
 require 'support/factory_bot'
 
@@ -137,8 +138,4 @@ RSpec.configure do |config|
 
 end
 
-include Warden::Test::Helpers
-
-RSpec.configure do |config|
-  config.include Warden::Test::Helpers
-end
+require 'devise'

@@ -16,7 +16,7 @@ class BasePage < SitePrism::Page
   end
 
   element :success_notification,  '.alert-success'
-
+  element :warning_notification,  '.alert.bg-danger'
 
   def click_brand
     nav_bar.logo_button.click
